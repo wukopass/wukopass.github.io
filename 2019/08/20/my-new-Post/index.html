@@ -7,14 +7,17 @@
   
   <title>my new Post | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="哼_哼的个人空间  Git版本控制   正文 Git版本控制 —— IDE工具（IDEA）  原    哼_哼 发布于 2018/04/04 15:52   字数 1356   阅读 2125   收藏 13   点赞 2    评论 0GitIDEAIDE浪费了“黄金五年”的Java程序员，还有救吗？ &amp;gt;&amp;gt;&amp;gt;    本文介绍使用IDEA控制Git操作 关联本地Git客户端 首先">
+<meta property="og:type" content="article">
 <meta property="og:title" content="my new Post">
 <meta property="og:url" content="http://yoursite.com/2019/08/20/my-new-Post/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="哼_哼的个人空间  Git版本控制   正文 Git版本控制 —— IDE工具（IDEA）  原    哼_哼 发布于 2018/04/04 15:52   字数 1356   阅读 2125   收藏 13   点赞 2    评论 0GitIDEAIDE浪费了“黄金五年”的Java程序员，还有救吗？ &amp;gt;&amp;gt;&amp;gt;    本文介绍使用IDEA控制Git操作 关联本地Git客户端 首先">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-20T00:46:14.186Z">
+<meta property="og:updated_time" content="2019-08-20T00:49:33.507Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="my new Post">
+<meta name="twitter:description" content="哼_哼的个人空间  Git版本控制   正文 Git版本控制 —— IDE工具（IDEA）  原    哼_哼 发布于 2018/04/04 15:52   字数 1356   阅读 2125   收藏 13   点赞 2    评论 0GitIDEAIDE浪费了“黄金五年”的Java程序员，还有救吗？ &amp;gt;&amp;gt;&amp;gt;    本文介绍使用IDEA控制Git操作 关联本地Git客户端 首先">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -83,11 +86,111 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>哼_哼的个人空间  Git版本控制   正文</p>
+<p>Git版本控制 —— IDE工具（IDEA）  原</p>
+<p>   哼_哼 发布于 2018/04/04 15:52   字数 1356   阅读 2125   收藏 13   点赞 2    评论 0<br>GitIDEAIDE<br>浪费了“黄金五年”的Java程序员，还有救吗？ &gt;&gt;&gt;   </p>
+<p>本文介绍使用IDEA控制Git操作</p>
+<p>关联本地Git客户端</p>
+<p>首先要根据系统环境安装Git客户端</p>
+<p>然后使用File –&gt; Settings –&gt;  Version Control –&gt; Git配置客户端安装目录</p>
+<p>创建本地仓库</p>
+<p>根据项目要求创建自己的项目</p>
+<p>然后使用VCS –&gt; Import into Version Control  –&gt; Create Git Repository…在项目上创建Git仓库</p>
+<p>创建成功后会在项目文件夹内出现.git 目录</p>
+<p>克隆远程仓库</p>
+<p>我们可以通过两种方式克隆Git项目。</p>
+<p>第一种，通过其他工具（如：Git Bash）将Git项目克隆到本地，然后使用IDEA直接打开项目。File –&gt; Open…</p>
+<p>第二种，使用IDEA从版本库直接导入项目。File –&gt; New –&gt; Project from version control –&gt; Git   </p>
+<p>我们需要填写Git版本库URL、存储目录</p>
+<p>提交代码</p>
+<p>我们如果希望文件被Git管理那我们就要将文件进行add操作。</p>
+<p>在IDEA中我们只要对某个文件设置一次add，之后就不用在手动进行add了。</p>
+<p>文件右键 –&gt; Git –&gt; Add</p>
+<p>提交代码时我们使用 文件右键 –&gt; Git –&gt; Commit Directory…进行提交</p>
+<p>分支管理</p>
+<p>分支管理主要集中在IDEA的右下角操作区。</p>
+<p>主菜单功能</p>
+<p>New Branch : 从当前分支新建分支。上图就是从master分支创建新的分支。</p>
+<p>Checkout Tag or Revision : 使用分支、标签或提交编码，检出一个临时分支。</p>
+<p>Local Branches : 本地分支列表。同时显示对应了那个远程分支。</p>
+<p>Remote Branches : 远程分支列表。</p>
+<p>本地分支菜单</p>
+<p>Checkout : 检出这个分支。</p>
+<p>Checkout As… ： 使用这个分支创建新的分支并检出到新分支。</p>
+<p>Compare With… : 使用当前分支与所选分支做代码提交比较。</p>
+<p>Rebase Current onto Selected: 在当前分支做变基。（将所选分支提交加入到当前分支）</p>
+<p>Checkout with Rebase : 检出所选分支并做变基。（将当前分支提交加入到所选分支）</p>
+<p>Merge into  Current： 合并到当前分支（将所选分支合并到当前分支）</p>
+<p>Rname：修改所选分支名称</p>
+<p>Delete ：删除所选分支</p>
+<p>远程分支菜单</p>
+<p>Checkout As… : 使用远程分支创建一个新的本地分支，并检出这个分支。</p>
+<p>Compare With : 使用当前分支与所选分支做代码提交比较。</p>
+<p>Rebase Current onto Selected : 在当前分支做变基。（将所选分支提交加入到当前分支）</p>
+<p>Merge into  Current： 合并分支（将当前分支与所选分支进行合并）</p>
+<p>Delete ：删除所选分支</p>
+<p>本地分支推送到远程仓库</p>
+<p>检出要推送的分支，然后项目右键 –&gt; Git –&gt; Repository –&gt; push</p>
+<p>push的时候会有new标签提示会在远程新建分支</p>
+<p>标签管理</p>
+<p>检出要打标签的分支，然后Git –&gt; Repository –&gt; Tag…</p>
+<p>本地标签推送到远程仓库</p>
+<p>项目右键 –&gt; Git –&gt; Repository –&gt; push</p>
+<p>然后选中底部的Push Tags。我们可以选择推送所有标签还是当前分支标签。</p>
+<p>代码拉取、推送</p>
+<p>代码拉取项目右键 –&gt; Git –&gt; Repository –&gt; pull</p>
+<p>代码推送项目右键 –&gt; Git –&gt; Repository –&gt; push</p>
+<p>变基操作</p>
+<p>普通变基</p>
+<p>选择分支执行变基操作。这里需要注意当前分支为补丁分支，选中的分支为基底分支。也就是说当前分支提交会添加在选中分支提交之后。</p>
+<p>合并提交（交互式变基）</p>
+<p>在代码没有pull前我们可以在本地分支进行提交的合并。这样会使得远程分支不去关心本地开发过程日志，而使得远程日志干净整洁。</p>
+<p>变基前log</p>
+<p>找到要合并的第一条log，然后右键选择Interactively Rebase from Here…进行交互式变基</p>
+<p>（此选项低版本IDEA可能没有请更新到2018版以上）</p>
+<p>除题一条外其他全部选择squash随前面的提交一并提交</p>
+<p>编辑交互式变基提交说明。默认显示合并的所有提交的内容，我们也可以添加和修改内容。</p>
+<p>变基后日志</p>
+<p>查看提交日志</p>
+<p>log页签</p>
+<p>查看控制台</p>
+<p>console页签。在控制台中我们可以看到实际执行的git命令，可以帮助我们查找问题。</p>
+<p>储藏工作区</p>
+<p>有时我们需要经正在编写的代码临时储藏，然后去修改一些bug，完成bug修改后进行恢复。这时我们可以使用代码储藏。</p>
+<p>项目右键 –&gt; Git –&gt; Repository –&gt; Stash Changes</p>
+<p>填写储藏名称</p>
+<p>这是我们会发现修改的代码不见了。</p>
+<p>之后我们要恢复储藏区的内容</p>
+<p>项目右键 –&gt; Git –&gt; Repository –&gt; UnStash Changes</p>
+<p>选择要恢复的暂存名称并恢复暂存</p>
+<p>这时我们发现修改的代码又回来了</p>
+<p>提交回退</p>
+<p>我们如果想要放弃最近一次提交的内容可以使用提交回退</p>
+<p>回退前log</p>
+<p>项目右键 –&gt; Git –&gt; Repository –&gt; Reset HEAD…</p>
+<p>执行回退（HEAD后面加几个^就回退几次提交）</p>
+<p>执行后日志</p>
+<p>管理远程仓库地址</p>
+<p>项目右键 –&gt; Git –&gt; Repository –&gt; Reotes…</p>
+<p>提交应用（挑樱桃）</p>
+<p>我们可以使用提交应用的方式，将一次提交应用在其他分支上。</p>
+<p>首先我们要切换至需要应用提交的分支上。</p>
+<p>然后在log界面找到那次提交，右键 –&gt; Cherry-Pick</p>
+<p>加载更多</p>
+<p>开源中国社区</p>
+<p>关于我们<br>联系我们<br>合作伙伴<br>Open API</p>
+<p>在线工具</p>
+<p>码云 Gitee.com<br>企业研发管理<br>CopyCat-代码克隆检测<br>实用在线工具</p>
+<p>微信公众号</p>
+<p>开源中国 APP</p>
+<p>聚合全网技术文章，根据你的阅读喜好进行个性推荐</p>
+<p>下载 APP<br>©开源中国(OSChina.NET)   工信部  开源软件推进联盟  指定官方社区 深圳市奥思网络科技有限公司版权所有  粤ICP备12009483号-3</p>
+<p>顶部</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/20/my-new-Post/" data-id="cjzj3ykk10001ogr730qgt4bz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/20/my-new-Post/" data-id="cjzj42g8800018gr7d6vbo4ja" class="article-share-link">Share</a>
       
       
     </footer>
